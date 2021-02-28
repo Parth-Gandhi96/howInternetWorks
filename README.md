@@ -18,11 +18,11 @@ part of coursework of Web System Development.
 
 ## CheckList
 
-- [ ] Menu as Sidebar on left side : https://bootstrapious.com/p/bootstrap-sidebar
+- [X] Menu as Sidebar on left side : https://bootstrapious.com/p/bootstrap-sidebar
 - [ ] Index page
     - [ ] Introduction for all topics - with URL to all pages
 - [ ] About Page
-    - [ ] Discuss about this assignment
+    - [X] Discuss about this assignment
     - [ ] Few lines about yourself
 - [ ] Pages (one page for each topic) :
     - [ ] Add the content from video
