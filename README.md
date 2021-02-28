@@ -14,7 +14,7 @@ part of coursework of Web System Development.
 2. IP Addresses, Packets and Routing
 3. DNS
 4. HTTP and HTTPS protocols
-5. W3C and HTML and CSS
+5. W3C, HTML and CSS
 
 ## CheckList
 
