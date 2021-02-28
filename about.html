@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How Internet Works</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+          integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/myStyle.css">
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
+            integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
+            crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
+            integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
+            crossorigin="anonymous"></script>
+    <link rel="icon" href="images/i_icon.webp">
+</head>
+<body>
+<div class="wrapper">
+    <!-- Sidebar -->
+    <nav id="sidebar">
+        <div class="sidebar-header">
+            <h3>How Internet Works</h3>
+        </div>
+
+        <ul class="list-unstyled components">
+            <!--            <p>Dummy Heading</p>-->
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Menu</a>
+                <ul class="collapse list-unstyled" id="homeSubmenu">
+                    <li>
+                        <a href="pages/howInternetWorks.html">How the Internet Works</a>
+                    </li>
+                    <li>
+                        <a href="pages/domainIcann.html">Domain names and ICANN</a>
+                    </li>
+                    <li>
+                        <a href="pages/ipPacketRoute.html">IP Addresses, Packets and Routing</a>
+                    </li>
+                    <li>
+                        <a href="pages/DNS.html">DNS</a>
+                    </li>
+                    <li>
+                        <a href="pages/httpProtocols.html">HTTP and HTTPS protocols</a>
+                    </li>
+                    <li>
+                        <a href="pages/w3cHtmlCss.html">W3C and HTML and CSS</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="active">
+                <a href="about.html">About</a>
+            </li>
+
+        </ul>
+    </nav>
+
+    <div id="content">
+        <nav class="navbar navbar-expand-lg navbar-light mb-4">
+            <div class="container-fluid">
+
+                <button type="button" id="sidebarCollapse" class="btn btn-info">
+                    <i class="fas fa-align-left"></i>
+                    <!--                    <span>Toggle Sidebar</span>-->
+                </button>
+
+            </div>
+        </nav>
+
+        <div class="container ml-3">
+            <div class="row">
+                <div class="col-10">
+                    <h1>About</h1>
+                    <p class="lead">
+                        This website provides basic information about How Internet Works!
+                        It provides basic terminologies for understanding the working of internet
+                        as networks of networks. </p>
+                    <p class="lead">
+                        This website is designed and developed by Parthkumar Anilkumar Gandhi as a
+                        part of coursework of Web System Development.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+        <footer class="bg-light text-center text-lg-start mt-lg-5">
+
+            <div class="text-center bg-light p-3">
+                For More information about How Internet Works :
+                <a class="text-dark" href="https://www.youtube.com/playlist?list=PLzdnOPI1iJNfMRZm5DDxco3UdsFegvuB7">Click
+                    Here</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+    </div>
+</div>
+
+
+<!-- jQuery CDN - Slim version (=without AJAX) -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<!-- Popper.JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+<!-- Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+
+<script>
+    $(document).ready(function () {
+
+        $('#sidebarCollapse').on('click', function () {
+            $('#sidebar').toggleClass('active');
+        });
+
+    });
+</script>
+</body>
+</html>
