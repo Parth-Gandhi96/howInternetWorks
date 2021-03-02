@@ -19,13 +19,17 @@ part of coursework of Web System Development.
 ## CheckList
 
 - [X] Menu as Sidebar on left side : https://bootstrapious.com/p/bootstrap-sidebar
-- [ ] Index page
-    - [ ] Introduction for all topics - with URL to all pages
+- [X] Index page
+    - [X] Introduction for all topics - with URL to all pages
 - [ ] About Page
     - [X] Discuss about this assignment
     - [ ] Few lines about yourself
 - [ ] Pages (one page for each topic) :
-    - [ ] Add the content from video
+    - [X] Add the content from video
     - [ ] Add atleast one figure in each page
     - [ ] Add the video (to stream on the page only : "Embeds")
 - [ ] Create and write in README the GitHub pages URL
+
+
+# GitHub page URL:
+https://parth-gandhi96.github.io/howInternetWorks/index.html
