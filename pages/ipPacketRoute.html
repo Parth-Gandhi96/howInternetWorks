@@ -79,73 +79,245 @@
                 <div class="col-10">
                     <h1>IP Addresses, Packets and Routing</h1>
                     <div class="mt-4"></div>
+
+                    <h4>Introduction</h4>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore
-                        et dolore magna aliqua. Adipiscing enim eu turpis egestas pretium. Mi sit amet mauris commodo
-                        quis
-                        imperdiet massa tincidunt nunc. Pulvinar mattis nunc sed blandit libero volutpat sed.
-                        Ullamcorper
-                        velit sed ullamcorper morbi. Turpis nunc eget lorem dolor sed viverra. Pellentesque pulvinar
-                        pellentesque habitant morbi tristique senectus. Eu facilisis sed odio morbi quis. Amet facilisis
-                        magna etiam tempor orci. Facilisis leo vel fringilla est ullamcorper. Viverra nibh cras pulvinar
-                        mattis nunc sed blandit libero. Eu volutpat odio facilisis mauris sit amet massa vitae tortor.
-                        Gravida arcu ac tortor dignissim. Eget velit aliquet sagittis id consectetur purus ut faucibus.
-                        Tincidunt ornare massa eget egestas. Vel pharetra vel turpis nunc eget lorem dolor sed viverra.
-                        Hac
-                        habitasse platea dictumst quisque sagittis purus sit. Curabitur vitae nunc sed velit dignissim
-                        sodales ut eu.
+                        Every device that is connected to the Internet
+                        whether it is a server a computer or a mobile phone is identified uniquely by a
+                        string of numbers known as an IP address.
+                        You can consider the IP address similar
+                        to your home address that is the address, that uniquely identifies your home.
+                        Any letter sent to you reaches you precisely because of your home address.
+                        Similarly in the internet world an IP address acts as a shipping address
+                        through which all information reaches its destination.
+                        Your internet service provider will decide the IP address of your device and you are able to see
+                        what
+                        IP address your ISP has given to your mobile phone or laptop.
+                        The server in the data center also has an IP address.
+                        The server stores a website so you can access any website just by knowing the
+                        server's IP address. However, it is difficult for a person to remember so
+                        many IP addresses.
+                        So to solve this problem domain names like
+                        youtube.com, facebook.com etc are used which correspond to IP addresses
+                        which are easier for us to remember than the long sequence of numbers
+                        Another thing to notice here is that a server has the capability of storing several websites
+                        and if the server consists of multiple websites all the websites cannot be
+                        accessed with the server's IP address.
+                        In such cases additional pieces of
+                        information, host headers are used to uniquely identify the website.
+                        However, for the giant web sites like Facebook.com or YouTube.com the entire data
+                        center infrastructure will be dedicated to the storage of the particular website.
+                        To access the internet we always use domain names instead of the complex IP address numbers.
+                        From where does the internet get IP addresses corresponding to our domain name requests.
+                        Well, for this purpose the internet uses a huge phone book known as DNS.
+                    </p>
+                    <h4>Concept of IP Addresses</h4>
+                    <p>
+                        The work of Vint Cerf and Bob Kahn invented the internet working protocol, to make communication
+                        possible.
+                        This invention laid the groundwork for what we now call the internet.
+                        The internet is a network of networks. It links billions of devices together all
+                        around the globe. So maybe you're connected with a laptop or a phone through wifi, then
+                        that wifi connection connects to an internet service provider (or ISP), and that ISP connects
+                        you to billions and billions of devices around the world through hundreds of thousands of
+                        networks that are all interconnected.
+                        One thing that most people do not appreciate is that the internet is really a design philosophy
+                        and an architecture expressed in a set of protocols.
+                        A protocol is a well known set of rules and standards, that if all parties
+                        agree to use it, will allow them to communicate without trouble.
+                        How the internet actually physically works is less important than the fact that this design
+                        philosophy
+                        has allowed the internet to adapt and absorb new communication technologies.
+                        This is because in order for a new technology to use the internet in some fashion, it just needs
+                        to know which protocols to work with.
+                        All the different devices on the internet have unique addresses.
+                        An address on the internet is just a number, similar to a phone number or a sort of street
+                        address,
+                        that's unique to each computer or device at the edge of the network.
+                        This is similar to how most homes and businesses have a mailing address. You don't need to know
+                        a person to
+                        send them a letter in the mail, but you do need to know their address and how to write
+                        the address properly so the letter can be carried by a mail system to its destination.
+                        The addressing system for computers on the internet is similar and it forms part of one
+                        of the most important protocols used in internet communication simply called the internet
+                        protocol or IP.
+                        A computer's address then is called its IP address. Visiting a website is really
+                        just your computer asking another computer for information. Your computer sends a message
+                        to the other computer's IP address and it also sends along its origin address, so the
+                        other computer knows where to send its response.
                     </p>
                     <p>
-                        Libero enim sed faucibus turpis in eu mi. Tincidunt id aliquet risus feugiat in ante metus
-                        dictum.
-                        Id porta nibh venenatis cras. Massa enim nec dui nunc mattis enim. Venenatis a condimentum vitae
-                        sapien pellentesque habitant morbi tristique senectus. Vestibulum rhoncus est pellentesque elit
-                        ullamcorper dignissim. Adipiscing vitae proin sagittis nisl. Maecenas ultricies mi eget mauris
-                        pharetra. Vulputate sapien nec sagittis aliquam malesuada bibendum. Leo a diam sollicitudin
-                        tempor
-                        id eu nisl nunc. Et pharetra pharetra massa massa.</p>
+                        IP is just numbers organized in a hierarchy.
+                        Just like a home address has a country, a city, a street, and a house number,
+                        an IP address has many parts.
+                        Just like all digital data, each of these numbers is represented in bits.
+                        Traditional IP addresses are 32 bits long,
+                        with 8 bits for each part of the address.
+                        The earlier numbers usually identify the country and regional network of the device.
+                        Then come the subnetworks, and then finally the address of the specific device.
+                        This version of IP addressing is called IPv4.
+                        It was designed in 1973 and was widely adopted in the early 80s,
+                        and provides for more than 4 billion unique addresses for devices connecting to the Internet.
+                        But the internet has turned out to be much more popular than even Vint Cerf imagined
+                        and 4 billion unique addresses won't be enough.
+                        We're now in the middle of a multi-year transition to a longer IP address format
+                        called IPv6,
+                        which uses 128 bits per address and provides over 340 undecillion unique addresses.
+                        That's more than enough for every grain of sand on Earth to have its own IP address.
+                        Most users never see or care about internet addresses.
+                    </p>
+                    <h4>How data is stored and get interpreted?</h4>
+                    <p>This web content that you are reading from the Google Data Center is sent to
+                        you in the form of a huge collection of zeros and ones.
+                        What makes the data transfer in the internet efficient is the way in which these zeros and ones
+                        are chopped up into small chunks known as packets and transmitted.
+                        Let's assume these streams of zeros and ones are divided into different packets by the
+                        server where each packet consists of six bits.
+                        Along with the bits of the web content each packet also consists of the sequence
+                        number and the IP addresses of the server and your phone.
+                        With this information the packets are routed towards your phone.
+                        It's not necessary that all packets are routed through the same path and each packet
+                        independently
+                        takes the best route available at that time.
+                        Upon reaching your phone the packets are reassembled according to their sequence number.
+                        If it is the case that any packets fail to reach your phone and acknowledgement
+                        is sent from your phone to resend the lost packets.
+                        Now compare this with a postal network
+                        with a good infrastructure, but the customers do not follow the basic rules
+                        regarding the destination addresses.
+                        In this scenario letters won't be able to
+                        reach the correct destination.
+                        Similarly in the internet we use something called protocols for the
+                        management of this complex flow of data packets.
+                        The protocols set the rules for
+                        data packet conversion, attachment of the source and destination addresses to each packet
+                        and the rules for routers etc for different applications the protocols
+                        used are different.
+                    </p>
 
-                    <p>Volutpat ac tincidunt vitae semper quis. Arcu cursus euismod quis viverra nibh cras pulvinar.
-                        Venenatis tellus in metus vulputate eu scelerisque felis imperdiet proin. Fringilla phasellus
-                        faucibus scelerisque eleifend donec pretium vulputate sapien nec. Enim nunc faucibus a
-                        pellentesque
-                        sit amet porttitor eget. Lorem donec massa sapien faucibus et molestie ac feugiat. Montes
-                        nascetur
-                        ridiculus mus mauris vitae ultricies. Fames ac turpis egestas sed tempus urna. Feugiat in
-                        fermentum
-                        posuere urna nec tincidunt praesent semper. Arcu cursus euismod quis viverra nibh cras pulvinar.
-                        Quis imperdiet massa tincidunt nunc pulvinar sapien et ligula ullamcorper. Pulvinar pellentesque
-                        habitant morbi tristique senectus et netus. Varius duis at consectetur lorem donec massa sapien
-                        faucibus et. Eget egestas purus viverra accumsan in. Elit eget gravida cum sociis natoque.</p>
+                    <h3>The Internet: Wires, Cables & Wifi</h3>
 
-                    <p>Sed tempus urna et pharetra pharetra massa massa ultricies mi. Leo vel orci porta non pulvinar.
-                        Viverra orci sagittis eu volutpat odio facilisis mauris sit. Pharetra pharetra massa massa
-                        ultricies. Sit amet mattis vulputate enim nulla aliquet. Diam ut venenatis tellus in metus
-                        vulputate. Imperdiet nulla malesuada pellentesque elit eget. Aenean sed adipiscing diam donec.
-                        Sem
-                        fringilla ut morbi tincidunt augue interdum velit. Tempus imperdiet nulla malesuada pellentesque
-                        elit. Turpis tincidunt id aliquet risus. A cras semper auctor neque vitae tempus. Id venenatis a
-                        condimentum vitae sapien. Faucibus vitae aliquet nec ullamcorper sit amet risus nullam. Neque
-                        volutpat ac tincidunt vitae semper. Egestas diam in arcu cursus euismod quis viverra nibh.
-                        Libero
-                        nunc consequat interdum varius sit amet mattis vulputate enim. Vel facilisis volutpat est velit
-                        egestas.</p>
+                    <h4>How does a picture, text message or email gets sent from one place to another?</h4>
+                    <p>It isn't magic. It's the Internet,
+                        a tangible physical system that was made to move information.
+                        The Internet is a lot like the postal service,
+                        but the physical stuff that gets sent is a little bit different.
+                        Instead of like boxes and envelopes the Internet ships binary information.
+                        Information is made of bits.
+                        A bit can be described as any pair of opposites -
+                        "on" or "off".
+                        "Yes" or "no".
+                        We typically use a one meaning "on" or a zero meaning "off".
+                        Because a bit has two possible states, we call it binary code.
+                        Eight bits strung together makes one byte.
+                        1000 bytes all together is a kilobyte.
+                        1,000 kilobytes is a megabyte.
+                        A song is typically encoded using about three to four megabytes.
+                        It doesn't matter if it's a picture, a video or a song
+                        everything on the Internet is represented and sent around as bits,
+                        These are the atoms of information!
+                        But it's not like we're physically sending ones and zeros from one place to another,
+                        one person to another.</p>
 
-                    <p>Ultricies tristique nulla aliquet enim tortor at. Hendrerit dolor magna eget est lorem ipsum
-                        dolor.
-                        A lacus vestibulum sed arcu non odio euismod lacinia at. At tempor commodo ullamcorper a lacus
-                        vestibulum. Adipiscing commodo elit at imperdiet dui accumsan. Pellentesque id nibh tortor id
-                        aliquet lectus. Eget arcu dictum varius duis at consectetur lorem. Vitae auctor eu augue ut
-                        lectus
-                        arcu bibendum at varius. Consectetur adipiscing elit ut aliquam purus. Pharetra pharetra massa
-                        massa
-                        ultricies mi quis hendrerit dolor magna. Luctus accumsan tortor posuere ac ut consequat. Vitae
-                        et
-                        leo duis ut diam quam nulla. Ac turpis egestas integer eget aliquet nibh praesent. Amet nisl
-                        suscipit adipiscing bibendum est ultricies integer quis. Dolor sit amet consectetur adipiscing
-                        elit
-                        pellentesque. Nisi est sit amet facilisis magna etiam tempor.</p>
+                    <h4>What is the physical stuff that actually gets sent over the wires and the airwaves?</h4>
+                    <p>We could turn on a light for a 1 or off for 0.
+                        Or use beeps or similar sort of things of like Morse code.
+                        These methods work but they're really slow, error-prone totally dependent upon humans .
+                        What we really need is a machine.
+                        So throughout history we've built many systems that can
+                        actually send this binary information through different types of physical mediums.
+                        Today we physically send bits by electricity, light and radio waves.
+                        To send a bit via electricity, imagine that you have two light bulbs
+                        connected by a copper wire.
+                        If one device operator turns on the electricity then the light bulb lights up.
+                        No electricity, no light.
+                        If the operators on both ends agree that light on means one
+                        and light off means zero then we have a system for sending bits
+                        of information from one person to another using electricity.
+                        But we have a problem.
+                        Let's say that, y'know, we want to send five zeros in a row.
+                        Well how can you do that in such a way that either person
+                        can actually count the number of zeros?
+                        Well the solution is to introduce a clock or a timer.
+                        The operators can agree that the sender will send one bit per second
+                        And the receiver will sit down and record every single second and see what's on the line.
+                        To send five zeros in a row you just turn off the light...
+                        wait five seconds...
+                        the person on the other end of the line will write down all five seconds
+                        say zero zero zero.
+                        And for ones do the opposite - turn on the light.
+                        Obviously we'd like to send things a little bit faster than one bit per second.
+                        So we need to increase our bandwidth:
+                        the maximum transmission capacity of a device.
+                        Bandwidth is measured by bit rate,
+                        which is the number of bits that we can actually send over a given period of time,
+                        usually measured in seconds.
+                        A different measure of speed is the latency
+                        or the amount of time it takes for one bit to travel from one place to another,
+                        from the source to the requesting device.
+                        In our human analogy one bit per second was pretty fast
+                        but kind of hard for a human to keep up with.
+                        So let's say that you want to actually download a 3 megabyte song
+                        in like three seconds.
+                        At 8 million bits per megabyte
+                        that means a bit rate of about 8 million bits per second.
+                        Obviously humans can't send or receive 8 million bits per second.
+                        But a machine can do that just fine.</p>
+
+                    <h4>What sort of cable to send these messages over? And how far the signals can go?</h4>
+                    <p>With an Ethernet wire, the kind that you find in your home or office or school,
+                        you see really measurable signal loss over just a few hundred feet.
+                        So if we really want this Internet thing to work over the entire world
+                        we need a different way of sending this information really long distances.
+                        I mean like across an ocean.
+                        Well what do we know that moves a lot faster than just like electricity through a wire?...
+                        light!
+                        We can actually send bits as light beams from one place to another
+                        using a fiber optic cable.
+                        A fiber optic cable is a thread of glass engineered to reflect light.
+                        When you send a beam of light down the cable
+                        light bounces up and down the length of the cable until it is received on the other end.
+                        Depending on the bounce angle we can actually send multiple bits simultaneously,
+                        all of them traveling at the speed of light.
+                        So fiber is really, really fast.
+                        But more importantly the signal doesn't really degrade over long distances.
+                        This is how you can go hundreds of miles without signal loss.
+                        This is why we use fiber optic cables across the ocean floors
+                        to connect one continent to another.
+                        In 2008 there was a cable that was actually cut near Alexandria, Egypt,
+                        which really interrupted the Internet for most of the Middle East and India.
+                        So we take this Internet thing for granted but
+                        it's really a pretty fragile physical system.
+                        Fiber is awesome but it's also really expensive and hard to work with.
+                        For most purposes you're gonna find copper cable.</p>
+
+                    <h4>how do we move things without wires? How do we send things wirelessly?</h4>
+                    <p>Wireless bit sending machines typically use a radio signal
+                        to send bits from one place to another.
+                        The machines have to actually translate the ones and zeros
+                        into radio waves of different frequencies.
+                        The receiving machines reverse the process and convert it
+                        back into binary on your computer.
+                        So wireless has made our Internet mobile but a radio signal doesn't travel all that far
+                        before it completely gets garbled.
+                        This is why you can't really pick up a Los Angeles radio station in Chicago.
+                        As great as wireless is, today it still relies on the wired internet.
+                        If you're in a coffee shop using Wi-Fi then the bits get sent
+                        through this wireless router and then are transferred
+                        to the physical wire to travel the really long distances of the Internet.
+                        The physical method for sending bits may change in the future.
+                        Whether it's lasers sent between satellites or radio waves from balloons or drones.
+                        But the underlying binary representation of information and the protocols for sending that
+                        information
+                        and receiving that information have pretty much stayed the same.
+                        Everything on the Internet
+                        whether it's words, emails, images, cat videos, puppy videos...
+                        all come down to these ones and zeros
+                        being delivered by electronic pulses, light beams, radio waves etc.
+                    </p>
+
+
+
                 </div>
             </div>
         </div>
