@@ -92,3 +92,8 @@ ul ul a {
     padding-left: 30px !important;
     background: #6d7fcc;
 }
+.row > .col-xs-3 {
+    display:flex;
+    flex: 0 0 25%;
+    max-width: 25%
+}
