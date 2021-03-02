@@ -26,7 +26,7 @@ part of coursework of Web System Development.
     - [ ] Few lines about yourself
 - [ ] Pages (one page for each topic) :
     - [X] Add the content from video
-    - [ ] Add atleast one figure in each page
+    - [X] Add atleast one figure in each page
     - [ ] Add the video (to stream on the page only : "Embeds")
 - [X] Create and write in README the GitHub pages URL
 
