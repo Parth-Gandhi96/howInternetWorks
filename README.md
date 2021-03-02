@@ -21,9 +21,9 @@ part of coursework of Web System Development.
 - [X] Menu as Sidebar on left side : https://bootstrapious.com/p/bootstrap-sidebar
 - [X] Index page
     - [X] Introduction for all topics - with URL to all pages
-- [ ] About Page
+- [X] About Page
     - [X] Discuss about this assignment
-    - [ ] Few lines about yourself
+    - [X] Few lines about yourself
 - [ ] Pages (one page for each topic) :
     - [X] Add the content from video
     - [X] Add atleast one figure in each page
