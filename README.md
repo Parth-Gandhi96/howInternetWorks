@@ -31,5 +31,5 @@ part of coursework of Web System Development.
 - [X] Create and write in README the GitHub pages URL
 
 
-# GitHub page URL:
+## GitHub page URL:
 https://parth-gandhi96.github.io/howInternetWorks/index.html
