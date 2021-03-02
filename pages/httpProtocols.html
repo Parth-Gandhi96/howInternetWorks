@@ -79,73 +79,147 @@
                 <div class="col-10">
                     <h1>HTTP and HTTPS protocols</h1>
                     <div class="mt-4"></div>
+
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore
-                        et dolore magna aliqua. Adipiscing enim eu turpis egestas pretium. Mi sit amet mauris commodo
-                        quis
-                        imperdiet massa tincidunt nunc. Pulvinar mattis nunc sed blandit libero volutpat sed.
-                        Ullamcorper
-                        velit sed ullamcorper morbi. Turpis nunc eget lorem dolor sed viverra. Pellentesque pulvinar
-                        pellentesque habitant morbi tristique senectus. Eu facilisis sed odio morbi quis. Amet facilisis
-                        magna etiam tempor orci. Facilisis leo vel fringilla est ullamcorper. Viverra nibh cras pulvinar
-                        mattis nunc sed blandit libero. Eu volutpat odio facilisis mauris sit amet massa vitae tortor.
-                        Gravida arcu ac tortor dignissim. Eget velit aliquet sagittis id consectetur purus ut faucibus.
-                        Tincidunt ornare massa eget egestas. Vel pharetra vel turpis nunc eget lorem dolor sed viverra.
-                        Hac
-                        habitasse platea dictumst quisque sagittis purus sit. Curabitur vitae nunc sed velit dignissim
-                        sodales ut eu.
+                        Let's look at web browsing.
+                        First, you open a web browser. It's the app you use to access the web pages.
+                        Next, you type in the web address, or URL, which stands for Uniform Resource Locator of the
+                        website
+                        you want to visit like Tumblr.com.
                     </p>
                     <p>
-                        Libero enim sed faucibus turpis in eu mi. Tincidunt id aliquet risus feugiat in ante metus
-                        dictum.
-                        Id porta nibh venenatis cras. Massa enim nec dui nunc mattis enim. Venenatis a condimentum vitae
-                        sapien pellentesque habitant morbi tristique senectus. Vestibulum rhoncus est pellentesque elit
-                        ullamcorper dignissim. Adipiscing vitae proin sagittis nisl. Maecenas ultricies mi eget mauris
-                        pharetra. Vulputate sapien nec sagittis aliquam malesuada bibendum. Leo a diam sollicitudin
-                        tempor
-                        id eu nisl nunc. Et pharetra pharetra massa massa.</p>
+                        What actually happens when you type an address into your web browser and then hit enter?
+                        And it really is about as crazy as you can imagine. So in that moment your
+                        computer starts talking to another computer, called a server, that's usually thousands of miles
+                        away.
+                        And in milliseconds your computer asks that server for a website, and that server
+                        starts to talk back to your computer in a language called HTTP.
+                        And HTTP stands for HyperText Transfer Protocol.
+                        You can kind of think of it as the language that one computer uses
+                        to ask another computer for a document.
+                        And it's actually really pretty straightforward.
+                        If you were to intercept the conversation between your computer and a web server on
+                        the internet, it's mainly made up of something called "GET" requests. Those are really very
+                        simply the word GET and the name of the document that you're requesting. So if you try to log
+                        into Tumblr and load our login page, all you're doing is sending a GET request to Tumblr's
+                        server that says GET /login. And that tells Tumblr's server that you want all of the HTML
+                        code for the Tumblr login page.
+                        So HTML stands for Hyper Text Markup Language and you can
+                        think of that as the language you use to tell a web browser how to make a page look.
+                        If you think about something like Wikipedia, which is really just a big simple document
+                        and HTML is the language that you use to make that title big and bold,
+                        to make the font the right font,
+                        to link certain text to certain other pages, to make some text bold, to make some
+                        to make some text bold, to make some text italic,
+                        to put an image in the middle of the page, to align the image to the right,
+                        to align the image to the left.
+                        The text of a web page is included directly in the HTML,
+                        but other parts, images or videos, are separate files with their own URLs that need to be
+                        requested.
+                        The browser sends separate HTTP requests for each of these and displays them as they arrive.
+                        If a web page has a lot of different images, each of them causes a separate HTTP request
+                        and the page loads slower.</p>
+                    <p>
+                        Now sometimes when you browse the web, you're not just requesting pages with GET requests.
+                        Sometimes you send information like when you fill out a form or type a search query.
+                        Your browser sends this information in plain text
+                        to the web server using an HTTP POST request.
+                        Let's say you log in to Tumblr.
+                        Well the first thing you do is you make a POST request, that is a POST to Tumblr's login page
+                        that has
+                        some data attached to it. It has your email address, it has your password. That goes to
+                        Tumblr's server. Tumblr's server figures out that okay, you're David. It sends a web page
+                        back to your browser that
+                    </p>
 
-                    <p>Volutpat ac tincidunt vitae semper quis. Arcu cursus euismod quis viverra nibh cras pulvinar.
-                        Venenatis tellus in metus vulputate eu scelerisque felis imperdiet proin. Fringilla phasellus
-                        faucibus scelerisque eleifend donec pretium vulputate sapien nec. Enim nunc faucibus a
-                        pellentesque
-                        sit amet porttitor eget. Lorem donec massa sapien faucibus et molestie ac feugiat. Montes
-                        nascetur
-                        ridiculus mus mauris vitae ultricies. Fames ac turpis egestas sed tempus urna. Feugiat in
-                        fermentum
-                        posuere urna nec tincidunt praesent semper. Arcu cursus euismod quis viverra nibh cras pulvinar.
-                        Quis imperdiet massa tincidunt nunc pulvinar sapien et ligula ullamcorper. Pulvinar pellentesque
-                        habitant morbi tristique senectus et netus. Varius duis at consectetur lorem donec massa sapien
-                        faucibus et. Eget egestas purus viverra accumsan in. Elit eget gravida cum sociis natoque.</p>
+                    <h4>How is it possible for every piece of data to be delivered to you reliably?</h4>
 
-                    <p>Sed tempus urna et pharetra pharetra massa massa ultricies mi. Leo vel orci porta non pulvinar.
-                        Viverra orci sagittis eu volutpat odio facilisis mauris sit. Pharetra pharetra massa massa
-                        ultricies. Sit amet mattis vulputate enim nulla aliquet. Diam ut venenatis tellus in metus
-                        vulputate. Imperdiet nulla malesuada pellentesque elit eget. Aenean sed adipiscing diam donec.
-                        Sem
-                        fringilla ut morbi tincidunt augue interdum velit. Tempus imperdiet nulla malesuada pellentesque
-                        elit. Turpis tincidunt id aliquet risus. A cras semper auctor neque vitae tempus. Id venenatis a
-                        condimentum vitae sapien. Faucibus vitae aliquet nec ullamcorper sit amet risus nullam. Neque
-                        volutpat ac tincidunt vitae semper. Egestas diam in arcu cursus euismod quis viverra nibh.
-                        Libero
-                        nunc consequat interdum varius sit amet mattis vulputate enim. Vel facilisis volutpat est velit
-                        egestas.</p>
+                    <p>Assume you want to play a song from Spotify.
+                        It seems like your computer connects directly to Spotify servers and Spotify sends you a song on
+                        a
+                        direct, dedicated line. But actually, that's not how the internet works.
+                        If the internet were made of direct, dedicated connections,
+                        it would be impossible to keep things working as millions of users join.
+                        Especially since there is no guarantee that every wire and computer is working all the time.
+                        Instead, data travels on the internet in a much less direct fashion.</p>
 
-                    <p>Ultricies tristique nulla aliquet enim tortor at. Hendrerit dolor magna eget est lorem ipsum
-                        dolor.
-                        A lacus vestibulum sed arcu non odio euismod lacinia at. At tempor commodo ullamcorper a lacus
-                        vestibulum. Adipiscing commodo elit at imperdiet dui accumsan. Pellentesque id nibh tortor id
-                        aliquet lectus. Eget arcu dictum varius duis at consectetur lorem. Vitae auctor eu augue ut
-                        lectus
-                        arcu bibendum at varius. Consectetur adipiscing elit ut aliquam purus. Pharetra pharetra massa
-                        massa
-                        ultricies mi quis hendrerit dolor magna. Luctus accumsan tortor posuere ac ut consequat. Vitae
-                        et
-                        leo duis ut diam quam nulla. Ac turpis egestas integer eget aliquet nibh praesent. Amet nisl
-                        suscipit adipiscing bibendum est ultricies integer quis. Dolor sit amet consectetur adipiscing
-                        elit
-                        pellentesque. Nisi est sit amet facilisis magna etiam tempor.</p>
+                    <p>The way information gets transferred from one computer to another is pretty interesting.
+                        It need not follow a fixed path, in fact, your path may change
+                        in the midst of a computer to computer conversation. Information on the internet goes from one
+                        computer to another in what we call a packet of information
+                        and a packet travels from one place to another on the Internet
+                        a lot like how you might get from one place to another in a car.
+                        Depending on traffic congestion or road conditions, you might choose or be
+                        forced to take a different route to get to the same place each time you travel.</p>
+
+                    <p>And just as you can transport all sorts of stuff inside a car,
+                        many kinds of digital information can be sent with IP packets but there are some limits.
+                        What if, for example, you need to move a space shuttle from where it was built to where it will
+                        be launched?
+                        The shuttle won't fit in one truck so it needs to be broken down into pieces, transported using
+                        a fleet of trucks.
+                        They could all take different routes and might get to the destination at different times.
+                        But once all the pieces are there, you can reassemble the pieces into the complete shuttle
+                        and it will be ready for launch.
+                        On the internet, the details work similarly.
+                        If you have a very large image that you want to send to a friend or upload to a website,
+                        that image might be made up of 10s of millions of bits of 1s and 0s, too many to send along in
+                        one packet.
+                        Since it's data on a computer, the computer sending the image can quickly
+                        break it into hundreds or even thousands of smaller parts called packets.
+                        Unlike cars or trucks, these packets don't have drivers and they don't choose their route.
+                        Each packet has the internet address of where it came from and where it's going.
+                        Special computers on the internet called routers
+                        act like traffic managers to keep the packets moving through the networks smoothly.
+                        If one route is congested, individual packets may travel different routes through the internet
+                        and they may arrive at the destination at slightly different times or even out of order.</p>
+
+                    <p>As part of the internet protocol,
+                        every router keeps track of multiple paths for sending packets, and it chooses the cheapest
+                        available path for each piece of data based on destination IP address for the packet.
+                        Cheapest in this case doesn't mean cost, but time and non-technical factors
+                        such as politics and relationships between companies.
+                        Often the best route for data to travel isn't necessarily the most direct.
+                        Having options for paths makes the network fault tolerant.
+                        Which means the network can keep sending packets even if something goes horribly, horribly
+                        wrong.
+                        This is the basis for a key principle of the internet: reliability.</p>
+
+                    <p>Now, what if you want to request some data and not everything is delivered? Say you want to
+                        listen to a song.
+                        How can you be 100% sure all the data will be delivered so the song plays perfectly?
+                        TCP comes into picture here - Transmission Control Protocol.
+                        TCP manages the sending and receiving of all your data as packets. Think of it like a guaranteed
+                        mail service.
+                        When you request a song on your device, Spotify sends a song broken up into many packets.
+                        When your packets arrive, TCP does a full inventory
+                        and sends back acknowledgements of each packet received.
+                        If all packets are there, TCP signs for your delivery and you're done.
+                        If TCP finds some packets are missing, it won't sign, otherwise your
+                        song won't sound as good or portions of the song could be missing.
+                        For each missing or incomplete packet, Spotify will resend them.
+                        Once TCP verifies the delivery of many packets
+                        for that one song request, your song will start to play.</p>
+
+                    <h4>What's great about the TCP and router systems is they're scalable.</h4>
+                    <p>They can work with 8 or 8 billion devices.
+                        In fact, because of these principles of fault tolerance and redundancy, the more routers we add,
+                        the
+                        more reliable the internet becomes.
+                        What's also great is we can grow and scale the internet
+                        without interrupting service for anybody using it.
+                        The internet is made of hundreds of thousands of networks
+                        and billions of computers and devices connected physically.
+                        These different systems that make up the internet connect to each other,
+                        communicate with each other,
+                        and work together because of agreed upon standards for how data is sent around on the internet.
+                        Computing devices, or routers along the internet, help all the packets make their way to the
+                        destination where they're reassembled, if necessary, in order.
+                        This happens billions of times a day, whether you and others are sending an email, visiting a
+                        web page,
+                        doing a video chat, using a mobile app,
+                        or when sensors or devices on the internet talk to each other.</p>
+
                 </div>
             </div>
         </div>
