@@ -28,7 +28,7 @@ part of coursework of Web System Development.
     - [X] Add the content from video
     - [ ] Add atleast one figure in each page
     - [ ] Add the video (to stream on the page only : "Embeds")
-- [ ] Create and write in README the GitHub pages URL
+- [X] Create and write in README the GitHub pages URL
 
 
 # GitHub page URL:
